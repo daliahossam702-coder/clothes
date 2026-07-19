@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+
+
+
+<body>
+
+     <!-- Top Bar -->
+    <div class="top-bar bg-black text-white py-2 small text-center">
+        Sign up and get 20% off your first order.
+        <a href="sign up.html" class="text-white fw-bold">Sign Up Now</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-2" href="index.html">SHOP.CO</a>
+            <div class="icons d-flex align-items-center gap-3 ms-auto d-lg-none">
+
+                <a href="card.html">
+                    <i class="bi bi-cart2 fs-4"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-person fs-4"></i>
+                </a>
+
+                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-lg-3">
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link me-2 fw-medium dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                            Shop
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow border-0 rounded-4 mt-3">
+
+                            <li><a class="dropdown-item me-3 py-2" href="product.html">Men</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Women</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Kids</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Accessories</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Shoes</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item  me-md-2 me-lg-3"><a class="nav-link fw-medium" href="#">On Sale</a></li>
+                    <li class="nav-item  me-md-2 me-lg-3"><a class="nav-link fw-medium" href="#New-Arrivals">New
+                            Arrivals</a></li>
+                    <li class="nav-item  me-md-2 me-lg-3"><a class="nav-link fw-medium" href="category.html">Brands</a>
+                    </li>
+                </ul>
+
+                <form class="search-form mx-lg-3 flex-grow-1 position-relative">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0 rounded-start-pill">
+                            <i class="bi bi-search"></i>
+                        </span>
+
+                        <input type="search" id="search" class="form-control bg-light border-0 rounded-end-pill"
+                            placeholder="Search for products..." onkeyup="searchItems()">
+
+                        <ul id="result" class="list-group position-absolute w-100 mt-5 "></ul>
+                    </div>
+                </form>
+
+
+                <div class="icons d-none d-lg-flex justify-content-center align-items-center gap-4">
+
+                    <a href="card.html"><i class="bi bi-cart2 fs-4"></i></a>
+
+                    <i class="bi bi-person fs-4"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- Breadcrumb -->
+
+    <div class="container mt-4">
+
+        <nav>
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li class="breadcrumb-item active">
+                    Casual
+                </li>
+
+            </ol>
+
+        </nav>
+
+    </div>
+
+
+    <!-- Main -->
+
+    <section class="container my-5">
+
+        <div class="row">
+
+            <!-- Sidebar -->
+
+            <div class="col-lg-3">
+
+                <div class="border rounded-4 p-4">
+
+                    <div class="d-flex justify-content-between">
+
+                        <h4 class="fw-bold">
+                            Filters
+                        </h4>
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                    </div>
+
+                    <hr>
+
+                    <ul class="list-unstyled">
+
+                        <li class="d-flex justify-content-between py-2">
+                            T-shirts
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Shorts
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Shirts
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Hoodie
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Jeans
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                    </ul>
+
+                    <hr>
+
+                    <h5 class="fw-bold">
+                        Price
+                    </h5>
+
+                    <input type="range" class="form-range">
+
+                    <div class="d-flex justify-content-between">
+
+                        <span>$50</span>
+
+                        <span>$200</span>
+
+                    </div>
+
+                    <hr>
+
+                    <h5 class="fw-bold">
+                        Colors
+                    </h5>
+
+                    <div class="colors d-flex flex-wrap gap-3">
+
+                        <input type="radio" name="color" id="green" hidden checked>
+                        <label for="green" class="color green">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id="red" hidden>
+                        <label for="red" class="color red">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id="yellow" hidden>
+                        <label for="yellow" class="color yellow">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+
+                        <input type="radio" name="color" id="orange" hidden>
+                        <label for="orange" class="color orange">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id="Cyan" hidden>
+                        <label for="Cyan" class="color Cyan">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+
+                        <input type="radio" name="color" id="blue" hidden>
+                        <label for="blue" class="color blue">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id="Purple" hidden>
+                        <label for="Purple" class="color Purple">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id=" Pink " hidden>
+                        <label for=" Pink " class="color  Pink ">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id="white" hidden>
+                        <label for="white" class="color white">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color" id="black" hidden>
+                        <label for="black" class="color black">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+
+
+                    </div>
+
+                    <hr>
+
+                    <h5 class="fw-bold">
+                        Size
+                    </h5>
+
+                    <div class="d-flex flex-wrap gap-3">
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            XX-Small
+                        </button>
+
+                        <button class="btn btn-light btn-size  rounded-pill">
+                            X-Small
+                        </button>
+
+                        <button class="btn btn-light btn-size  rounded-pill">
+                            Small
+                        </button>
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            Medium
+                        </button>
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            Large
+                        </button>
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            X-Large
+                        </button>
+
+                        <button class="btn btn-light rounded-pill">
+                            XX-Large
+                        </button>
+
+                    </div>
+
+                    <hr>
+
+                    <h5 class="fw-bold">
+                        Dress Style
+                    </h5>
+
+                    <ul class="list-unstyled">
+
+                        <li class="d-flex justify-content-between py-2">
+                            Casual
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Formal
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Party
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            Gym
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+
+                    </ul>
+
+                    <button class="btn btn-dark w-100 rounded-pill py-3">
+
+                        Apply Filter
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Products -->
+
+            <div class="col-lg-9">
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+
+                    <h2 class="fw-bold">
+
+                        Casual
+
+                    </h2>
+
+                    <p class="text-secondary">
+
+                        Showing 1-9 of 100 Products
+
+                    </p>
+
+                </div>
+
+                <div class="row g-4">
+                    <!-- Product 1 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/product1.png" class="card-img-top rounded-4 bg-light p-3">
+                                </a>
+                            </div>
+
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Gradient Graphic T-shirt
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                    <span class="text-dark ms-2">
+                                        4.5/5
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $145
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 2 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/product2.png" class="card-img-top rounded-4 bg-light p-3">
+                                </a>
+                            </div>
+
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Polo with Tipping Details
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                    <span class="text-dark ms-2">
+                                        4.5/5
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $180
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 3 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/product3.png" class="card-img-top rounded-4 bg-light p-2">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Black Striped T-shirt
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+
+                                    <span class="text-dark ms-2">
+
+                                        4.0/5
+
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $120
+
+                                    <span class="text-decoration-line-through text-secondary fs-6 me-2">
+
+                                        $150
+
+                                    </span>
+
+                                    <span class="badge bg-danger-subtle text-danger rounded-pill">
+
+                                        -30%
+
+                                    </span>
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 4 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/jeans.png.png" class="card-img-top rounded-4 bg-light p-2">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Skinny Fit Jeans
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+
+                                    <span class="text-dark ms-2">
+
+                                        5.0/5
+
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $240
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 5 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/shirt.png.png" class="card-img-top rounded-4 bg-light p-2">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+
+                                    Checkered Shirt
+
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+
+                                    <span class="text-dark ms-2">
+
+                                        4.5/5
+
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $180
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 6 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/orange-shirt.png.png" class="card-img-top rounded-4 bg-light p-2">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+
+                                    Sleeve Striped T-shirt
+
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                    <span class="text-dark ms-2">
+
+                                        4.5/5
+
+                                    </span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $130
+
+                                    <span class="text-decoration-line-through text-secondary fs-6 me-2">
+
+                                        $160
+
+                                    </span>
+
+                                    <span class="badge bg-danger-subtle text-danger rounded-pill">
+
+                                        -20%
+
+                                    </span>
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Product 7 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <a href="product.html">
+                                    <img src="images/green-shirt.png.png" class="card-img-top rounded-4 bg-light p-2"
+                                        alt="Product">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Vertical Striped Shirt
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+
+                                    <span class="text-dark ms-2">4.8/5</span>
+
+                                </div>
+
+                                <h5 class="fw-bold">
+
+                                    $212
+
+                                    <span class="text-decoration-line-through text-secondary fs-6 me-2">
+                                        $232
+                                    </span>
+
+                                    <span class="badge bg-danger-subtle text-danger rounded-pill">
+                                        -20%
+                                    </span>
+
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 8 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+
+                                <a href="product.html">
+                                    <img src="images/orange-shirt.png (2).png"
+                                        class="card-img-top rounded-4 bg-light p-1" alt="Product">
+                                </a>
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Courage Graphic T-shirt
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span class="text-dark ms-2">4.0/5</span>
+
+                                </div>
+
+                                <h5 class="fw-bold">$145</h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Product 9 -->
+
+                    <div class="col-md-6 col-lg-4">
+
+                        <div class="card border-0">
+                            <div class="img-box">
+                                <img src="images/shorts.png.png" class="card-img-top rounded-4 bg-light p-3"
+                                    alt="Product">
+                            </div>
+                            <div class="card-body px-0">
+
+                                <h6 class="fw-bold">
+                                    Loose Fit Bermuda Shorts
+                                </h6>
+
+                                <div class="text-warning mb-2">
+
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span class="text-dark ms-2">3.0/5</span>
+
+                                </div>
+
+                                <h5 class="fw-bold">$80</h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+
+                <nav class="mt-5">
+
+                    <ul class="pagination justify-content-center">
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">...</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">8</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">9</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">10</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="category.html">Next</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="newsletter p-5">
+
+        <div class="container">
+
+
+            <div class="bg-black rounded-5 p-4 p-lg-5">
+
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+
+                        <h2 class="text-white fw-bold display-5">
+                            STAY UP TO DATE ABOUT <br>
+                            OUR LATEST OFFERS
+                        </h2>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 ms-lg-auto mt-lg-0">
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text bg-white border-0 rounded-start-pill">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+
+                            <input type="email" class="form-control border-0 rounded-end-pill"
+                                placeholder="Enter your email address">
+
+                        </div>
+
+                        <button class="btn btn-light rounded-pill w-100 fw-semibold py-2">
+                            Subscribe to Newsletter
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!-- Logo -->
+
+                <div class="end col-lg-3">
+
+                    <h1 class="fw-bold">SHOP.CO</h1>
+
+                    <p class="text-secondary mt-4">
+                        We have clothes that suits your style and
+                        which you're proud to wear.
+                        From women to men.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" class="social-icon active">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                    <!-- Company -->
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5>COMPANY</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Help -->
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5>HELP</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- FAQ -->
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5>FAQ</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Resources -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <h5>RESOURCES</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <hr class="my-5">
+
+            <div class="foot d-flex justify-content-between align-items-center flex-wrap">
+
+                <p class="text-secondary">
+                    Shop.co © 2000-2023, All Rights Reserved
+                </p>
+
+                <div class="d-flex gap-2">
+                    <img src="images/Frame 53.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>

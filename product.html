@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400;600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+
+</head>
+
+
+
+<body>
+
+     <!-- Top Bar -->
+    <div class="top-bar bg-black text-white py-2 small text-center">
+        Sign up and get 20% off your first order.
+        <a href="sign up.html" class="text-white fw-bold">Sign Up Now</a>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold fs-2" href="index.html">SHOP.CO</a>
+            <div class="icons d-flex align-items-center gap-3 ms-auto d-lg-none">
+
+                <a href="card.html">
+                    <i class="bi bi-cart2 fs-4"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-person fs-4"></i>
+                </a>
+
+                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+
+            </div>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-lg-3">
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link me-2 fw-medium dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+
+                            Shop
+
+                        </a>
+
+                        <ul class="dropdown-menu shadow border-0 rounded-4 mt-3">
+
+                            <li><a class="dropdown-item me-3 py-2" href="product.html">Men</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Women</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Kids</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Accessories</a></li>
+
+                            <li><a class="dropdown-item py-2" href="#">Shoes</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item  me-md-2 me-lg-3"><a class="nav-link fw-medium" href="#">On Sale</a></li>
+                    <li class="nav-item  me-md-2 me-lg-3"><a class="nav-link fw-medium" href="#New-Arrivals">New
+                            Arrivals</a></li>
+                    <li class="nav-item  me-md-2 me-lg-3"><a class="nav-link fw-medium" href="category.html">Brands</a>
+                    </li>
+                </ul>
+
+                <form class="search-form mx-lg-3 flex-grow-1 position-relative">
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-0 rounded-start-pill">
+                            <i class="bi bi-search"></i>
+                        </span>
+
+                        <input type="search" id="search" class="form-control bg-light border-0 rounded-end-pill"
+                            placeholder="Search for products..." onkeyup="searchItems()">
+
+                        <ul id="result" class="list-group position-absolute w-100 mt-5 "></ul>
+                    </div>
+                </form>
+
+
+                <div class="icons d-none d-lg-flex justify-content-center align-items-center gap-4">
+
+                    <a href="card.html"><i class="bi bi-cart2 fs-4"></i></a>
+
+                    <i class="bi bi-person fs-4"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Breadcrumb -->
+    <section class="py-3 border-bottom">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class=" text-secondary">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Shop</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-secondary">Men</a></li>
+                    <li class="breadcrumb-item active">T-Shirts</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <section class="py-5">
+
+        <div class="container-fluid px-4 px-xxl-5">
+
+            <!-- <div class="row"> -->
+            <div class="row g-4 align-items-start">
+
+
+                <!-- Images -->
+
+                <div class="col-12 col-xl-6">
+
+
+                    <div class="row align-items-stretch">
+
+                        <!-- Small Images -->
+
+                        <div class="col-3 d-flex flex-column">
+
+
+
+                            <div class="border rounded bg-light rounded-5 small-image flex-grow-1 mb-3">
+                                <img src="images/main-shirt.png" class="img-fluid h-100">
+                            </div>
+
+
+                            <div class="border rounded bg-light rounded-5 small-image flex-grow-1 mb-3">
+                                <img src="images/shirt2.png" class="img-fluid h-100">
+                            </div>
+
+
+                            <div class="border rounded bg-light rounded-5 small-img flex-grow-1">
+                                <img src="images/shirt3.png" class="img-fluid h-100 w-100">
+                            </div>
+
+                        </div>
+
+                        <!-- Main Image -->
+                        <div class="col-9">
+                            <div class="main-img bg-light rounded-5 text-center">
+
+                                <img src="images/main-shirt.png" class="img-fluid  rounded-5 ">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product Details -->
+
+                <div class="col-12 col-xl-6 mt-4">
+
+                    <h1 class="fw-bold display-6">
+                        ONE LIFE GRAPHIC T-SHIRT
+                    </h1>
+
+                    <!-- Rating -->
+                    <div class="d-flex align-items-center mb-3">
+
+
+                        <div class="text-warning mb-2 fs-5">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <span class="ms-2 mb-2">
+                            4.5/5
+                        </span>
+
+                    </div>
+
+                    <!-- Price -->
+
+                    <div class="d-flex align-items-center mb-3">
+
+                        <h2 class="fw-bold">
+                            $260
+                        </h2>
+
+                        <h3 class="text-decoration-line-through text-secondary me-2">
+                            $300
+                        </h3>
+
+                        <span class="discount badge rounded-pill bg-danger-subtle text-danger px-3 py-2 mb-2">
+                            -40%
+                        </span>
+
+                    </div>
+
+                    <!-- Description -->
+
+                    <p class="text-secondary">
+
+                        This graphic t-shirt is perfect for any occasion.
+                        Crafted from a soft and breathable fabric,
+                        it offers superior comfort and style.
+
+                    </p>
+
+                    <hr>
+                    <!-- Select Colors -->
+                    <h6 class="fw-semibold mb-3">Select Colors</h6>
+
+                    <div class="colors d-flex flex-wrap gap-3 mb-4">
+
+                        <input type="radio" name="color-product" id="Olive-Brown" hidden checked>
+                        <label for="Olive-Brown" class="color colored-product Olive-Brown">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color-product" id="Dark-Teal" hidden>
+                        <label for="Dark-Teal" class="color colored-product Dark-Teal">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+                        <input type="radio" name="color-product" id="Navy-Blue" hidden>
+                        <label for="Navy-Blue" class=" color colored-product Navy-Blue">
+                            <i class="fa-solid fa-check"></i>
+                        </label>
+
+
+                    </div>
+
+                    <hr>
+
+                    <!-- Choose Size -->
+
+                    <h6 class="fw-semibold mb-3">Choose Size</h6>
+
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            Small
+                        </button>
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            Medium
+                        </button>
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            Large
+                        </button>
+
+                        <button class="btn btn-light btn-size rounded-pill">
+                            X-Large
+                        </button>
+                    </div>
+
+                    <hr>
+
+                    <div class="row align-items-center mt-4">
+
+                        <div class="col-md-4">
+
+                            <div
+                                class="d-flex justify-content-between align-items-center border rounded-pill px-3 py-2 bg-light">
+
+                                <button class="btn btn-sm">−</button>
+
+                                <span>1</span>
+
+                                <button class="btn btn-sm">+</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-8 mt-3 mt-md-0">
+
+                            <button class="btn btn-dark w-100 rounded-pill py-3">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs -->
+
+
+    <div class="container mt-5">
+
+        <ul class="nav nav-justified border-bottom">
+
+            <li class="nav-item links">
+                <a class="nav-link text-secondary" href="#">
+                    Product Details
+                </a>
+            </li>
+
+            <li class="nav-item links">
+                <a class="nav-link text-secondary" href="#">
+                    Rating & Reviews
+                </a>
+            </li>
+
+            <li class="nav-item links">
+                <a class="nav-link text-secondary" href="#">
+                    FAQs
+                </a>
+            </li>
+
+        </ul>
+
+        <br><br>
+
+
+
+        <!-- Header -->
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+
+            <h3 class="fw-bold">
+                All Reviews <span class="text-secondary fs-5">(451)</span>
+            </h3>
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                <!-- Left Side -->
+                <div class="d-flex align-items-center gap-3">
+
+                    <!-- Filter Button -->
+                    <button
+                        class="btn rounded-circle bg-light border-0 d-flex justify-content-center align-items-center"
+                        style="width:55px; height:55px;">
+                        <i class="bi bi-sliders fs-5 text-dark"></i>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn bg-light rounded-pill px-4 py-3 border-0 dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown">
+                            Latest
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Latest</a></li>
+                            <li><a class="dropdown-item" href="#">Newest</a></li>
+                            <li><a class="dropdown-item" href="#">Oldest</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <button class="btn btn-dark rounded-pill px-5 py-3">
+                    Write a Review
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Reviews -->
+
+        <div class="row g-4">
+
+            <!-- Review 1 -->
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="text-warning mb-2">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+
+                        <h5 class="fw-bold">
+                            Samantha D.
+                            <i class="bi bi-patch-check-fill text-success"></i>
+                        </h5>
+
+                        <p class="text-secondary">
+                            "I absolutely love this t-shirt! The design is unique
+                            and the fabric feels so comfortable. As a fellow
+                            designer, I appreciate the attention to detail.
+                            It's become my favorite go-to shirt."
+                        </p>
+
+                        <small class="text-muted">
+                            Posted on August 14, 2023
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+
+            <div class="col-lg-6">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body">
+                        <div class="text-warning mb-2">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Alex M.
+                            <i class="bi bi-patch-check-fill text-success"></i>
+                        </h5>
+
+                        <p class="text-secondary">
+                            "The t-shirt exceeded my expectations!
+                            The colors are vibrant and the print quality
+                            is top-notch. Being a UI/UX designer myself,
+                            I'm quite picky about aesthetics and this shirt
+                            definitely gets a thumbs up."
+                        </p>
+
+                        <small class="text-muted">
+                            Posted on August 15, 2023
+                        </small>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="text-warning mb-2">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Ethan R.
+                            <i class="bi bi-patch-check-fill text-success"></i>
+                        </h5>
+
+                        <p class="text-secondary">
+                            "This t-shirt is a must-have for anyone
+                            who appreciates good design.
+                            The minimalist style caught my eye
+                            and the fit is perfect."
+                        </p>
+
+                        <small class="text-muted">
+                            Posted on August 16, 2023
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Review 4 -->
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="text-warning mb-2">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Olivia P.
+                            <i class="bi bi-patch-check-fill text-success"></i>
+                        </h5>
+
+                        <p class="text-secondary">
+                            "As a UI/UX enthusiast,
+                            I value simplicity and functionality.
+                            This t-shirt not only represents those principles
+                            but also feels great to wear."
+                        </p>
+
+                        <small class="text-muted">
+                            Posted on August 17, 2023
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Review 5 -->
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="text-warning mb-2">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Liam K.
+                            <i class="bi bi-patch-check-fill text-success"></i>
+                        </h5>
+
+                        <p class="text-secondary">
+                            "The fabric is soft and the design speaks
+                            volumes about the designer's creativity.
+                            I highly recommend it."
+                        </p>
+
+                        <small class="text-muted">
+                            Posted on August 18, 2023
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Review 6 -->
+
+            <div class="col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="text-warning mb-2">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <h5 class="fw-bold">
+                            Ava H.
+                            <i class="bi bi-patch-check-fill text-success"></i>
+                        </h5>
+
+                        <p class="text-secondary">
+                            "I'm not just wearing a t-shirt;
+                            I'm wearing a piece of design philosophy.
+                            Every detail makes this shirt stand out."
+                        </p>
+
+                        <small class="text-muted">
+                            Posted on August 19, 2023
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Button -->
+
+        <div class="text-center mt-5">
+
+            <button class="btn btn-outline-dark rounded-pill px-5">
+                Load More Reviews
+            </button>
+
+        </div>
+
+    </div>
+    </section>
+    <!-- You Might Also Like -->
+    <section class="py-5">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5">
+                YOU MIGHT ALSO LIKE
+            </h2>
+
+            <div class="row g-4">
+
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card border-0">
+
+                        <img src="images/Polo.png" class="card-img-top bg-light rounded-4 p-4" alt="">
+
+                        <div class="card-body px-0">
+
+                            <h6 class="fw-bold">
+                                Polo with Contrast Trims
+                            </h6>
+
+                            <div class="text-warning mb-2">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <small class="text-dark ms-2">4.0/5</small>
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="fw-bold fs-5">
+                                    $212
+                                </span>
+
+                                <span class="text-decoration-line-through text-secondary ms-2">
+                                    $242
+                                </span>
+
+                                <span
+                                    class="discount badge rounded-pill bg-danger-subtle text-danger px-3 py-2 mb-2 ms-2">
+                                    -20%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 2 -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card border-0">
+
+                        <img src="images/product1.png" class="card-img-top bg-light rounded-4 p-4" alt="">
+
+                        <div class="card-body px-0">
+
+                            <h6 class="fw-bold">
+                                Gradient Graphic T-shirt
+                            </h6>
+
+                            <div class="text-warning mb-2">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <small class="text-dark ms-2">3.5/5</small>
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="fw-bold fs-5">
+                                    $145
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 3 -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card border-0">
+
+                        <img src="images/product2.png" class="card-img-top bg-light rounded-4 p-4" alt="">
+
+                        <div class="card-body px-0">
+
+                            <h6 class="fw-bold">
+                                Polo with Tipping Details
+                            </h6>
+
+                            <div class="text-warning mb-2">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <small class="text-dark ms-2">4.5/5</small>
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="fw-bold fs-5">
+                                    $180
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 4 -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="card border-0">
+
+                        <img src="images/product3.png" class="card-img-top bg-light rounded-4 p-1" alt="">
+
+                        <div class="card-body px-0">
+
+                            <h6 class="fw-bold">
+                                Black Striped T-shirt
+                            </h6>
+
+                            <div class="text-warning mb-2 ">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <small class="text-dark ms-2">5.0/5</small>
+                            </div>
+
+                            <div class="mt-2">
+
+                                <span class="fw-bold fs-5">
+                                    $120
+                                </span>
+
+                                <span class="text-decoration-line-through text-secondary ms-2">
+                                    $150
+                                </span>
+
+                                <span
+                                    class="discount badge rounded-pill bg-danger-subtle text-danger px-3 py-2 mb-2 ms-2">
+                                    -30%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+    <section class="newsletter p-5">
+
+        <div class="container">
+
+
+            <div class="bg-black rounded-5 p-4 p-lg-5">
+
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+
+                        <h2 class="text-white fw-bold display-5">
+                            STAY UP TO DATE ABOUT <br>
+                            OUR LATEST OFFERS
+                        </h2>
+
+                    </div>
+
+                    <div class="col-12 col-lg-4 ms-lg-auto mt-lg-0">
+
+                        <div class="input-group mb-3">
+
+                            <span class="input-group-text bg-white border-0 rounded-start-pill">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+
+                            <input type="email" class="form-control border-0 rounded-end-pill"
+                                placeholder="Enter your email address">
+
+                        </div>
+
+                        <button class="btn btn-light rounded-pill w-100 fw-semibold py-2">
+                            Subscribe to Newsletter
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row gy-5">
+
+                <!-- Logo -->
+
+                <div class="end col-lg-3">
+
+                    <h1 class="fw-bold">SHOP.CO</h1>
+
+                    <p class="text-secondary mt-4">
+                        We have clothes that suits your style and
+                        which you're proud to wear.
+                        From women to men.
+                    </p>
+
+                    <div class="d-flex gap-3 mt-4">
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                        <a href="#" class="social-icon active">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                     <!-- Company -->
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5>COMPANY</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Help -->
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5>HELP</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- FAQ -->
+
+                <div class="col-lg-2 col-md-6 col-12">
+
+                    <h5>FAQ</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Resources -->
+
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <h5>RESOURCES</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+                <!-- Resources -->
+
+                <div class="col-lg-3 col-6">
+
+                    <h5>RESOURCES</h5>
+
+                    <ul class="list-unstyled mt-4">
+
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <hr class="my-5">
+
+            <div class="foot d-flex justify-content-between align-items-center flex-wrap">
+
+                <p class="text-secondary">
+                    Shop.co © 2000-2023, All Rights Reserved
+                </p>
+
+                <div class="d-flex gap-2">
+                    <img src="images/Frame 53.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
