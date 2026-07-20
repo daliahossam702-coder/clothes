@@ -22,3 +22,10 @@ function searchItems() {
         }
     }
 }
+
+let count = 1;
+let btn = document.getElementById ("counterbtn");
+btn.addEventListener("click",function(){
+    count++;
+    btn.textContent=`1:${count}`;
+});
